@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -141,7 +142,7 @@
                 </svg>
                </label>
               </div> 
-               <input type="text" id="buscar"  placeholder="Buscar"></input>
+               <input type="text" class="buscar" id="buscar"  placeholder="Buscar">
             </div>  
 
           </div>
@@ -172,9 +173,9 @@
       </section>
      
         <section id="mostrarHechizos">
-          
+
           <h2>Hechizos</h2>
-         
+
         <div class="todosFiltros"> 
           <div class="menuSelect">
             <div class="menuFiltros">  
@@ -190,43 +191,76 @@
             <option value="ordenarD" id="ordenarDH" class="ord">Z-A</option>
           </select>
           </div>
+
+        <div class="menuSelect">
+          <div class="menuFiltros"> 
+           <label class="filtros" id="buscadorH">
+            <svg xmlns="http://www.w3.org/2000/svg" class="iconos" viewBox="0 0 512 512">
+              <path d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z"/>
+            </svg>
+           </label>
+          </div> 
+          <input type="text" class="buscar" id="buscarH"  placeholder="Buscar H">
         </div>
-          <!--   </div>
-        </div> -->
+      </div>
           
         <div class="hechizosContainer" id="hechizosContainer"> 
           <div id="hechizos"></div>
-          </div> 
+        </div> 
+
+        <div class="hechizosOrdenadosContainer" id="hechizosOrdenadosContainer"> 
+          <div id="hechizosOrdenados"></div>
+        </div> 
+
+        <div class="hechizosBuscadosContainer" id="hechizosBuscadosContainer"> 
+          <div id="hechizosBuscados"></div>
+        </div> 
           
         </section>
 
      <section id="mostrarPociones">
-          
+
           <h2>Pociones</h2>
           <div class="todosFiltros"> 
             <div class="menuSelect">
               <div class="menuFiltros">  
                 <label class="filtros" id="btnOrdenarP">
-                <!-- <label class="filtros" id="ordenAD"> -->
                   <svg xmlns="http://www.w3.org/2000/svg" class="iconos" viewBox="0 0 512 512">
-                    <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                     <path d="M239.6 373.1c11.94-13.05 11.06-33.31-1.969-45.27c-13.55-12.42-33.76-10.52-45.22 1.973L160 366.1V64.03c0-17.7-14.33-32.03-32-32.03S96 46.33 96 64.03v302l-32.4-35.39C51.64 317.7 31.39 316.7 18.38 328.7c-13.03 11.95-13.9 32.22-1.969 45.27l87.1 96.09c12.12 13.26 35.06 13.26 47.19 0L239.6 373.1zM448 416h-50.75l73.38-73.38c9.156-9.156 11.89-22.91 6.938-34.88S460.9 288 447.1 288H319.1C302.3 288 288 302.3 288 320s14.33 32 32 32h50.75l-73.38 73.38c-9.156 9.156-11.89 22.91-6.938 34.88S307.1 480 319.1 480h127.1C465.7 480 480 465.7 480 448S465.7 416 448 416zM492.6 209.3l-79.99-160.1c-10.84-21.81-46.4-21.81-57.24 0L275.4 209.3c-7.906 15.91-1.5 35.24 14.31 43.19c15.87 7.922 35.04 1.477 42.93-14.4l7.154-14.39h88.43l7.154 14.39c6.174 12.43 23.97 23.87 42.93 14.4C494.1 244.6 500.5 225.2 492.6 209.3zM367.8 167.4L384 134.7l16.22 32.63H367.8z"/>
                   </svg>
                 </label>
               </div> 
             <select name="orden" id="ordenP" class="select">
               <option>Seleccione uno:</option>
-              <option value="ordenarA" id="ordenarAH" class="ord">A-Z</option>
-              <option value="ordenarD" id="ordenarDH" class="ord">Z-A</option>
+              <option value="ordenarA" id="ordenarAP" class="ord">A-Z</option>
+              <option value="ordenarD" id="ordenarDP" class="ord">Z-A</option>
             </select>
             </div>
-          </div>
-            </div>
 
-        </div>
+            <div class="menuSelect">
+              <div class="menuFiltros"> 
+               <label class="filtros" id="buscadorP">
+                <svg xmlns="http://www.w3.org/2000/svg" class="iconos" viewBox="0 0 512 512">
+                  <path d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z"/>
+                </svg>
+               </label>
+              </div> 
+              <input type="text" class="buscar" id="buscarP"  placeholder="Buscar P">
+            </div>
+          </div>
+
           <div class="pocionesContainer" id="pocionesContainer"> 
-          <div id="pociones"></div>
+            <div id="pociones"></div>
+          </div>
+          <div class="pocionesOrdenadasContainer" id="pocionesOrdenadasContainer"> 
+            <div id="pocionesOrdenadas"></div>
           </div> 
+  
+          <div class="pocionesBuscadasContainer" id="pocionesBuscadasContainer"> 
+            <div id="pocionesBuscadas"></div>
+          </div>  
+
+
         </section>
      
     <div id="root"></div>
@@ -234,3 +268,4 @@
   </body>
 
 </html>
+

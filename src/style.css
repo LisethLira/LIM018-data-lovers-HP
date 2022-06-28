@@ -246,7 +246,7 @@ display:none;
   background-color:#D8B9C3;
 }
 
-#buscar{
+.buscar{
   display:none;
   background-color:#D8B9C3 ;
   width: 205px;
@@ -257,7 +257,7 @@ display:none;
   color: #363062;
 }
 
-#buscar::placeholder{
+.buscar::placeholder{
   color: #363062;
 }
 
@@ -938,3 +938,53 @@ font-weight:bold ;
   }
 }
   
+#hechizosBuscados{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  width:auto;
+  height:auto;
+  justify-content: center;
+}
+
+#personajeBuscado{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  width:auto;
+  height:auto;
+  justify-content: center; 
+}
+
+
+#pocionesOrdenadas{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+gap: 20px;
+width:auto;
+height:auto;
+justify-content: center; 
+}
+
+#pocionesBuscadas{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+gap: 20px;
+width:auto;
+height:auto;
+justify-content: center; 
+}
+
+#hechizosOrdenados{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+gap: 20px;
+width:auto;
+height:auto;
+justify-content: center; 
+}
