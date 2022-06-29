@@ -218,4 +218,4 @@ En el proyecto se ha logrado  desarrollar con los siguientes objetivos de aprend
 
 ### Prototipo de alta fidelidad
 
- Nosotros te recomendamos [Figma](https://www.figma.com/file/70A6PvMLwXVSo8LS7aUiPm/Potterica-Per%C3%BA?node-id=0%3A1)
+[Figma](https://www.figma.com/file/70A6PvMLwXVSo8LS7aUiPm/Potterica-Per%C3%BA?node-id=0%3A1)
