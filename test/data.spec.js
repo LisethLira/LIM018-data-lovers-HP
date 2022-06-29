@@ -1,7 +1,6 @@
 import {sortData,filterCasa,filterEspecie,filterGenero,filterAscendencia,computeStats} from '../src/data.js';
 import data from '../src/data/harrypotter/data.js';
 
-
 describe('sorData', () => {
   it('Deberia ser una función', () => {
     expect(typeof sortData).toBe('function');
@@ -82,14 +81,3 @@ describe('computeStats', ()=>{
     expect(computeStats([5,5,5])).toStrictEqual("6.25");
   });
 });
-
-
-
-
-
-
-
-
-
-
-
