@@ -70,7 +70,9 @@ function mostrarTodosPer(){
 function crearCerrar(newDiv){
     let cerrar=document.createElement("button");
     cerrar.classList.add('cerrar');
-    newDiv.appendChild(cerrar);  
+
+    newDiv.appendChild(cerrar);
+
     cerrar.innerText = 'X';
     
   cerrar.addEventListener('click',()=>{
@@ -260,6 +262,7 @@ crearCerrar(datosDiv);
   } 
   opcionPersonaje.classList.add('pintarOpcionNav');
 }
+
 
 let filtrarCasa=document.getElementById("casa");
 
